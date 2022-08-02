@@ -1,28 +1,51 @@
-body{
-    background: rgb(245, 245, 245);
+body {
+    background: rgb(255, 206, 44);
     /* background-color: antiquewhite; */
 }
+
 .form-control {
     border-top: 0px;
     border-right: 0px;
     border-left: 0px;
     border-bottom: 1px solid #ced4da;
 }
-.form-control:focus{
+.form-control:focus {
     border-color: green;
     box-shadow: 0px,
 }
 
-button{
-    background-color: aquamarine;
+button {
+    /* background-color: aquamarine; */
     float: right;
 }
+
 .list-group-item{
     border-top: 0px;
     border-right: 0px;
     border-left: 0px;
     border-bottom: 1px solid rgba(0,0,0,.125);
     text-align: left;
-    
- 
- }
+}
+#title{
+    margin-top: 15%;
+}
+#cuaderno {
+    background: white;
+    box-shadow:
+        0 1px 1px rgba(0, 0, 0, 0.15),
+        /*The top layer shadow */
+        0 12px 0 -5px white,
+        /* The second layer */
+        0 12px 1px -4px rgba(0, 0, 0, 0.15),
+        /* The second layer shadow */
+        0 24px 0 -10px white,
+        /* The third layer */
+        0 24px 1px -9px rgba(0, 0, 0, 0.15),
+        /* The third layer shadow */
+        0 25px 0 -15px white,
+        /* The fourth layer */
+        0px 5px 50px rgba(0, 0, 0, 0.35);
+    /* The fourth layer shadow */
+    min-height: 400px;
+    max-width: 600px;
+}

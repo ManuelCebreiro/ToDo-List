@@ -8,9 +8,10 @@ const Home = () => {
 	
 
 	return (
-		<div className="container text-center">
-			<h1 className="container d-flex justify-content-center text-center col-8 bi bi-x-lg">TODOS</h1>
-			<div className="container shadow p-1 bg-white rounded col-8 bi bi-x-lg">
+		<div className="container text-center" >
+			<h1 className="container d-flex justify-content-center text-center col-8 bi bi-x-lg" id="title">TODOS</h1>
+			<div  className="container text-center px-0" id="cuaderno">
+			<div className="container p-1 bg-white rounded bi bi-x-lg" >
 			<input type="text" value={inputValue} onChange={(e) => setinputValue(e.target.value)} onKeyDown={(e) => {
 
 				let array = Array.from(e.target.value);
@@ -21,7 +22,7 @@ const Home = () => {
 					setinputValue("")
 				}
 			}}
-				className="form-control"
+				className="form-control mb-1"
 				placeholder="¿Qué tienes que hacer?" aria-label="Username"
 				aria-describedby="basic-addon1" />
 			
@@ -42,6 +43,7 @@ const Home = () => {
 				})}
 			</ul>
 			</div>
+		</div>
 		</div>
 		</div>
 	);
